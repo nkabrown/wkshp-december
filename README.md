@@ -7,7 +7,7 @@ Let's learn D3 development, two basic notions from statistics, and naive set the
 To include:
 
 * function to return random outputs that represent the rolls of two dice
-* visualiztion of a two-dimensional sample space
+* visualization of a two-dimensional sample space
 * mapping of dice roll results to points in the sample space
 * alternatively represent the points of the sample space as a table of numbers
 * alternatively represent dice roll results with flubber
