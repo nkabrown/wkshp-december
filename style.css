@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fafafa;
+  font-family: "Lato", sans-serif;
 }
 
 #mount {
@@ -26,12 +27,15 @@ body {
 .dice-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  width: 300px;
 }
 
 button {
   height: 35px;
   width: 100px;
   outline: none;
+  cursor: pointer;
 }
 
 #die-0,
@@ -42,7 +46,31 @@ button {
   align-items: center;
   font-size: 22px;
   margin-top: 15px;
-  margin-right: 20px;
+  margin-bottom: 15px;
+  background-color: #fff;
   border: 2px solid #444;
   border-radius: 5px;
+}
+
+.event-list {
+  width: 300px;
+}
+
+.event-list ul {
+  list-style: none;
+}
+
+.event-list li {
+  cursor: pointer;
+}
+
+.event-list p {
+  align-self: start;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.event-list p span {
+  font-size: 10px;
+  font-weight: normal;
 }
