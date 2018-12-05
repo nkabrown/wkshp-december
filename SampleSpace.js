@@ -15,7 +15,7 @@ export default class SampleSpace {
           height = document.getElementsByClassName('sample-space')[0].clientHeight - 100 - margin.top - margin.bottom;
 
     // define a container and coordinate space
-    const graph = d3.select(this.mount).append('svg')
+    const graph = d3.select(this.mount).select('svg')
         .attr('width', width + margin.right + margin.left)
         .attr('height', height + margin.top + margin.bottom)
       .append('g')
