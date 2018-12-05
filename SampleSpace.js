@@ -66,8 +66,19 @@ export default class SampleSpace {
         });
   }
 
+  sum(roll1, roll2) {
+    const points = d3.selectAll('.point');
+    points.transition(300).attr('r', 3.5).style('fill', '#444');
+    points.each(function(d) {
+      const sum = d.x + d.y;
+      const point = d3.select(this);
+      sum == (roll1 + roll2) ? point.transition(300).attr('r', 6).style('fill', '#f44336') : null;
+    });
+  }
+
   event(roll) {
     const points = d3.selectAll('.point');
+    points.transition(300).attr('r', 3.5).style('fill', '#444');
     points.each(function(d) {
       const point = d3.select(this);
       `${d.x}${d.y}` == roll ? point.transition(300).attr('r', 6).style('fill', '#f44336') : null;
