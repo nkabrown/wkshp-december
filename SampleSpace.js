@@ -66,8 +66,16 @@ export default class SampleSpace {
         });
   }
 
+  event(roll) {
+    const points = d3.selectAll('.point');
+    points.each(function(d) {
+      const point = d3.select(this);
+      `${d.x}${d.y}` == roll ? point.transition(300).attr('r', 6).style('fill', '#f44336') : null;
+    });
+  }
+
   tabulate() {
-    const matrix = this.faces.map((elem, i, obj) => obj.map(x => ({ x: x, y: obj[i] })));
+    const matrix = this.faces.map((elem, i, obj) => obj.map(x => ({ x: x, y: obj[i] }))).reverse();
     console.log(matrix);
     return matrix;
   }
