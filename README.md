@@ -11,8 +11,6 @@ To include:
 * function to return random outputs that represent the rolls of two dice
 * visualization of a two-dimensional sample space
 * mapping of dice roll results to points in the sample space
-* alternatively represent the points of the sample space as a table of numbers
-* alternatively represent dice roll results with flubber
 
 Definition of sample space:
 
@@ -21,3 +19,8 @@ Definition of sample space:
 Definition of event:
 
   An event is a subset of a sample space.
+
+NEXT STEPS:
+
+* alternatively represent the points of the sample space as a table of numbers
+* map other events to the sample space, i.e. all rolls that sum to even numbers or all rolls with one even and one odd number
